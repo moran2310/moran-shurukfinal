@@ -1,0 +1,223 @@
+/* UpgradeCV.css - עיצוב מלא כולל שלבים, רקע, המלצות וחלק תחתון */
+
+.upgrade-page {
+  font-family: 'Arial', sans-serif;
+  direction: rtl;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.features div {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+}
+
+.features div:hover {
+  transform: translateY(-5px);
+}
+
+.features img {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 25px;
+  transition: transform 0.3s ease;
+}
+
+.features div:hover img {
+  transform: scale(1.1);
+}
+
+.features h3 {
+  color: #000;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.features p {
+  color: #333;
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.orange-section {
+  background-color: #ff8c00;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.orange-steps-section {
+  background-color: #ff6f00;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.orange-steps-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.step-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.step {
+  background-color: white;
+  color: #333;
+  width: 230px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+.step img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.blue-section {
+  background-color: #00bcd4;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.testimonial {
+  font-size: 18px;
+  margin-top: 20px;
+  font-style: italic;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.contact-footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-footer h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.contact-btn {
+  background-color: #f37021;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #d85e17;
+}
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.form-fields input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+.orange-steps-section {
+  background-color: #ff8c00;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.orange-steps-section h2 {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.steps-inline {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.step {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 220px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+.step img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 16px;
+  color: #333;
+}

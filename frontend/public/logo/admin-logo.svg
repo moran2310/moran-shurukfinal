@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160" height="50" viewBox="0 0 160 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="50" height="50" rx="10" fill="#1a5f7a"/>
+  <path d="M15 25C15 19.4772 19.4772 15 25 15C30.5228 15 35 19.4772 35 25C35 30.5228 30.5228 35 25 35C19.4772 35 15 30.5228 15 25Z" fill="white"/>
+  <path d="M25 18C22.2386 18 20 20.2386 20 23C20 24.3261 20.5268 25.5979 21.4645 26.5355C22.4021 27.4732 23.6739 28 25 28C26.3261 28 27.5979 27.4732 28.5355 26.5355C29.4732 25.5979 30 24.3261 30 23C30 20.2386 27.7614 18 25 18Z" fill="#1a5f7a"/>
+  <path d="M35 35C35 31.134 31.866 28 28 28H22C18.134 28 15 31.134 15 35" stroke="white" stroke-width="2"/>
+  <text x="60" y="32" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1a5f7a">JobPortal</text>
+</svg>

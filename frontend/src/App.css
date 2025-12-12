@@ -1,0 +1,15 @@
+.app-container {
+  padding-top: 120px; /* Space for both navbars */
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Make sure all pages have proper spacing */
+.page-container {
+  padding-top: 120px;
+  min-height: calc(100vh - 120px);
+}

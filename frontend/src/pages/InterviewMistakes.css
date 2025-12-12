@@ -1,0 +1,186 @@
+.article-page {
+  min-height: 100vh;
+  background-color: #f8fafc;
+  direction: rtl;
+  padding-top: 80px;
+}
+
+.article-header {
+  background: linear-gradient(135deg, #1a5f7a 0%, #0066cc 100%);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.article-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.article-meta {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+}
+
+.article-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.article-intro {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 3rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.mistake-section {
+  margin-bottom: 3rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.mistake-section:hover {
+  transform: translateY(-5px);
+}
+
+.mistake-section h2 {
+  color: #1a5f7a;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mistake-content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.mistake-icon {
+  font-size: 2.5rem;
+  color: #0066cc;
+  background: #f0f9ff;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.mistake-content p {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  grid-column: 2;
+}
+
+.pro-tip {
+  grid-column: 2;
+  background: #f0f9ff;
+  padding: 1rem;
+  border-radius: 8px;
+  border-right: 4px solid #0066cc;
+}
+
+.pro-tip strong {
+  color: #0066cc;
+}
+
+.summary-section {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 3rem 0;
+}
+
+.summary-section h2 {
+  color: #1a5f7a;
+  margin-bottom: 1rem;
+}
+
+.summary-section p {
+  color: #444;
+  line-height: 1.6;
+}
+
+.additional-resources {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.additional-resources h3 {
+  color: #1a5f7a;
+  margin-bottom: 1rem;
+}
+
+.additional-resources ul {
+  list-style: none;
+  padding: 0;
+}
+
+.additional-resources li {
+  margin-bottom: 0.5rem;
+}
+
+.additional-resources a {
+  color: #0066cc;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.additional-resources a:hover {
+  background-color: #f0f9ff;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .article-header {
+    padding: 2rem 1rem;
+  }
+
+  .article-header h1 {
+    font-size: 2rem;
+  }
+
+  .article-content {
+    padding: 1rem;
+  }
+
+  .mistake-content {
+    grid-template-columns: 1fr;
+  }
+
+  .mistake-icon {
+    margin: 0 auto 1rem;
+  }
+
+  .mistake-content p,
+  .pro-tip {
+    grid-column: 1;
+  }
+}

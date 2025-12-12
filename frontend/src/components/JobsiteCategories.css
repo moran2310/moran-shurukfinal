@@ -1,0 +1,81 @@
+.jobsite-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  text-align: right;
+  transition: all 0.3s ease-in-out;
+}
+
+.jobsite-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.jobsite-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.jobsite-list li {
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.jobsite-list li:hover {
+  background-color: #e6f0ff;
+  color: #007bff;
+}
+.jobsearch-salary-wrapper {
+  width: 250px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  direction: rtl;
+}
+.jobsearch-wrapper,
+.jobsearch-extra-wrapper,
+.jobsearch-salary-wrapper {
+  width: 250px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  direction: rtl;
+}
+.jobsearch-wrapper {
+  direction: rtl;
+  text-align: right;
+}
+
+.jobsearch-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.dropdown-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-list li {
+  margin: 5px 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.dropdown-list li:hover {
+  color: #0077ff;
+  text-decoration: underline;
+}

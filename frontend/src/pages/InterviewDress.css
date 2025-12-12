@@ -1,0 +1,268 @@
+.article-page {
+  min-height: 100vh;
+  background-color: #f8fafc;
+  direction: rtl;
+  padding-top: 80px;
+}
+
+.article-header {
+  background: linear-gradient(135deg, #2c5282 0%, #2b6cb0 100%);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.article-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.article-meta {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+}
+
+.article-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.article-intro {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 3rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.dress-section {
+  margin-bottom: 3rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.dress-section:hover {
+  transform: translateY(-5px);
+}
+
+.dress-section h2 {
+  color: #2c5282;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dress-content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.dress-icon {
+  font-size: 2.5rem;
+  color: #2b6cb0;
+  background: #ebf8ff;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.dress-tips {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dress-tips li {
+  margin-bottom: 0.8rem;
+  padding-right: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+  color: #444;
+}
+
+.dress-tips li::before {
+  content: "✓";
+  position: absolute;
+  right: 0;
+  color: #2b6cb0;
+  font-weight: bold;
+}
+
+.dress-subsections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  width: 100%;
+}
+
+.dress-subsection {
+  background: #ebf8ff;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.dress-subsection h3 {
+  color: #2c5282;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.dress-subsection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dress-subsection li {
+  margin-bottom: 0.8rem;
+  padding-right: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+  color: #444;
+}
+
+.dress-subsection li::before {
+  content: "•";
+  position: absolute;
+  right: 0;
+  color: #2b6cb0;
+}
+
+.tips-list {
+  display: grid;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.tip-item {
+  background: #ebf8ff;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.tip-item h3 {
+  color: #2c5282;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.tip-item p {
+  color: #444;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.summary-section {
+  background: linear-gradient(135deg, #ebf8ff 0%, #e6fffa 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 3rem 0;
+}
+
+.summary-section h2 {
+  color: #2c5282;
+  margin-bottom: 1rem;
+}
+
+.summary-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.summary-section li {
+  margin-bottom: 0.8rem;
+  padding-right: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+  color: #444;
+}
+
+.summary-section li::before {
+  content: "→";
+  position: absolute;
+  right: 0;
+  color: #2b6cb0;
+}
+
+.additional-resources {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.additional-resources h3 {
+  color: #2c5282;
+  margin-bottom: 1rem;
+}
+
+.additional-resources ul {
+  list-style: none;
+  padding: 0;
+}
+
+.additional-resources li {
+  margin-bottom: 0.5rem;
+}
+
+.additional-resources a {
+  color: #2b6cb0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.additional-resources a:hover {
+  background-color: #ebf8ff;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .article-header {
+    padding: 2rem 1rem;
+  }
+
+  .article-header h1 {
+    font-size: 2rem;
+  }
+
+  .article-content {
+    padding: 1rem;
+  }
+
+  .dress-content {
+    grid-template-columns: 1fr;
+  }
+
+  .dress-icon {
+    margin: 0 auto 1rem;
+  }
+
+  .dress-subsections {
+    grid-template-columns: 1fr;
+  }
+}

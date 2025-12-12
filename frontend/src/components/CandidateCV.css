@@ -1,0 +1,154 @@
+.cv-viewer {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(26, 95, 122, 0.08);
+  margin: 2rem;
+  overflow: hidden;
+  border: 1px solid rgba(26, 95, 122, 0.1);
+  direction: rtl;
+}
+
+.cv-header {
+  background: linear-gradient(135deg, #1a5f7a 0%, #2c8cb4 100%);
+  padding: 2rem;
+  color: white;
+}
+
+.candidate-profile {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.default-avatar {
+  font-size: 4rem !important;
+  color: #1a5f7a;
+}
+
+.profile-info h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.contact-details {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.contact-details span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cv-sections {
+  padding: 2rem;
+}
+
+.cv-section {
+  margin-bottom: 2.5rem;
+}
+
+.cv-section h3 {
+  color: #1a5f7a;
+  font-size: 1.4rem;
+  margin: 0 0 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.experience-item, .education-item {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(26, 95, 122, 0.1);
+}
+
+.experience-item:last-child, .education-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.experience-header, .education-header {
+  margin-bottom: 0.5rem;
+}
+
+.experience-header h4, .education-header h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.company, .institution {
+  color: #1a5f7a;
+  font-weight: 500;
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.experience-period, .education-period {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience-description, .education-description {
+  color: #444;
+  line-height: 1.6;
+  margin: 0.5rem 0 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-item {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(26, 95, 122, 0.1);
+}
+
+.skill-name {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.skill-level {
+  height: 6px;
+  background: rgba(26, 95, 122, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.level-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #1a5f7a, #2c8cb4);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}

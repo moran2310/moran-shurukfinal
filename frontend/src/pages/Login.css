@@ -1,0 +1,284 @@
+/*
+ * Base page layout
+ *
+ * The login page previously used a dark purple gradient which could be
+ * overwhelming and reduce contrast for form elements. To improve
+ * readability and provide a cleaner aesthetic, the gradient has been
+ * replaced with a modern blue‑to‑teal scheme that matches the colours
+ * used throughout the worker dashboard. The flexbox layout remains
+ * centred with full‑height support to ensure the form is always
+ * vertically centred regardless of screen size.
+ */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 50%, #06b6d4 100%);
+  direction: rtl;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-page::before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  /* Use a very subtle white radial gradient on top of the new
+   * background. Increased transparency ensures the effect does not
+   * compete with the underlying colours. */
+  background: radial-gradient(circle, rgba(255,255,255,0.07) 0%, transparent 60%);
+  top: -50%;
+  left: -50%;
+  animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  z-index: 1;
+  animation: container-appear 0.6s ease-out;
+}
+
+@keyframes container-appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-container h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-container.password-container {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  right: 12px;
+  /* Match icon colour to the primary indigo tone used in the header */
+  color: #4f46e5;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  padding-right: 40px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.form-group input[type="password"],
+.form-group input[type="text"].password-field {
+  padding-left: 40px;
+}
+
+.form-group input:focus + .input-icon {
+  color: #6b46c1;
+  transform: scale(1.1);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+  background: white;
+}
+
+.form-links {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.forgot-password {
+  /* Link colour harmonises with primary indigo hue */
+  color: #4f46e5;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.forgot-password:hover {
+  color: #3b82f6;
+}
+
+.forgot-password::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #3b82f6;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.forgot-password:hover::after {
+  transform: scaleX(1);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  /* Gradient updated to match the refined blue palette */
+  background: linear-gradient(to right, #4f46e5, #3b82f6);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(107, 70, 193, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-icon {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.submit-btn:hover .btn-icon {
+  transform: translateX(-5px);
+}
+
+.submit-btn:hover {
+  background: linear-gradient(to right, #3b82f6, #06b6d4);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(107, 70, 193, 0.4);
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 25px;
+  color: #666;
+}
+
+.register-link a {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 5px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.register-link a:hover {
+  color: #3b82f6;
+}
+
+.register-link a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #3b82f6;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.register-link a:hover::after {
+  transform: scaleX(1);
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+.password-toggle {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #06b6d4 !important;
+  border: 2px solid #0ea5e9 !important;
+  border-radius: 8px;
+  color: white !important;
+  font-size: 18px !important;
+  cursor: pointer;
+  padding: 6px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 2px 8px rgba(255, 107, 53, 0.4);
+}
+
+.password-toggle:hover {
+  background: #0ea5e9 !important;
+  color: white !important;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.password-toggle:focus {
+  outline: none;
+  color: #6b46c1;
+}

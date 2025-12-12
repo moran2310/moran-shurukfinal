@@ -1,0 +1,226 @@
+/*
+ * Like the login page, the registration background has been refreshed
+ * with a blue‑to‑teal gradient. This palette aligns with the
+ * dashboard aesthetic and improves visual cohesion across the
+ * application. The layout remains centred to support both large and
+ * small screens.
+ */
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 50%, #06b6d4 100%);
+  direction: rtl;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.register-page::before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  /* Subtle radial overlay; lighter transparency than before */
+  background: radial-gradient(circle, rgba(255,255,255,0.07) 0%, transparent 60%);
+  top: -50%;
+  left: -50%;
+  animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.register-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  z-index: 1;
+  animation: container-appear 0.6s ease-out;
+}
+
+@keyframes container-appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.register-container h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 500;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  right: 12px;
+  /* Indigo icon colour matching the dashboard */
+  color: #4f46e5;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  padding-right: 40px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.form-group input[type="password"],
+.form-group input[type="text"].password-field {
+  padding-left: 40px;
+}
+
+.form-group input:focus + .input-icon {
+  color: #6b46c1;
+  transform: scale(1.1);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+  background: white;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  /* Updated button gradient for a modern look */
+  background: linear-gradient(to right, #4f46e5, #3b82f6);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(107, 70, 193, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-icon {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.submit-btn:hover .btn-icon {
+  transform: translateX(-5px);
+}
+
+.submit-btn:hover {
+  background: linear-gradient(to right, #3b82f6, #06b6d4);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(107, 70, 193, 0.4);
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 25px;
+  color: #666;
+}
+
+.login-link a {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 5px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.login-link a:hover {
+  color: #3b82f6;
+}
+
+.login-link a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #3b82f6;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.login-link a:hover::after {
+  transform: scaleX(1);
+}
+
+.password-toggle {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #06b6d4 !important;
+  border: 2px solid #0ea5e9 !important;
+  border-radius: 8px;
+  color: white !important;
+  font-size: 18px !important;
+  cursor: pointer;
+  padding: 6px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 2px 8px rgba(255, 107, 53, 0.4);
+}
+
+.password-toggle:hover {
+  background: #0ea5e9 !important;
+  color: white !important;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.password-toggle:focus {
+  outline: none;
+  color: #6b46c1;
+}

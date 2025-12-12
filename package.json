@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "nodemailer": "^7.0.5",
+    "react-icons": "^5.5.0",
+    "start": "^5.1.0",
+    "uuid": "^11.1.0"
+  }
+}

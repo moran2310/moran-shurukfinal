@@ -1,0 +1,94 @@
+.candidate-management {
+  padding: 2rem;
+}
+
+.section-header h2 {
+  color: #1a5f7a;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.candidates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.candidate-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.candidate-header {
+  margin-bottom: 1.5rem;
+}
+
+.candidate-avatar {
+  width: 64px;
+  height: 64px;
+  background: #e3f2fd;
+  border-radius: 50%;
+  padding: 12px;
+  color: #1a5f7a;
+  margin: 0 auto 1rem;
+}
+
+.candidate-info h3 {
+  margin: 0;
+  color: #1a5f7a;
+  font-size: 1.3rem;
+}
+
+.contact-info {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  color: #666;
+}
+
+.info-item svg {
+  color: #1a5f7a;
+}
+
+.view-resume-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: #1a5f7a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+}
+
+.view-resume-btn:hover {
+  background: #156c8a;
+}
+
+.no-resume-text {
+  text-align: center;
+  color: #666;
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin: 0;
+}

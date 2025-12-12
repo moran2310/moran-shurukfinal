@@ -1,0 +1,51 @@
+.jobsearch-wrapper {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 280px;
+  margin-right: 40px;
+  float: right; /* כדי שיהיה בצד ימין */
+}
+
+.jobsearch-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.dropdown-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.dropdown-list > li {
+  cursor: pointer;
+  padding: 6px 0;
+}
+
+.sub-dropdown {
+  list-style: none;
+  padding-right: 15px;
+  margin-bottom: 10px;
+}
+
+.sub-dropdown li {
+  font-size: 14px;
+  padding: 4px 0;
+  cursor: pointer;
+}
+.jobsearch-wrapper,
+.jobsearch-extra-wrapper,
+.jobsearch-salary-wrapper {
+  width: 250px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  direction: rtl;
+}
